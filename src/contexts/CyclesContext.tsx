@@ -62,7 +62,7 @@ export function CyclesContextProvider({
 
     const [amountSecondsPassed, setAmountSecondsPassed] = useState(() => {
         if (activeCycle) {
-            const secondsDifference = differenceInSeconds(
+            return differenceInSeconds(
                 new Date(),
                 new Date(activeCycle.startDate)
             );
